@@ -1,0 +1,5 @@
+,macro_f1,macro_f1,pr_auc,pr_auc,roc_auc,roc_auc,balanced_accuracy,balanced_accuracy
+,mean,std,mean,std,mean,std,mean,std
+protocol,,,,,,,,
+random,0.97,0.0008,0.9618,0.0003,0.9842,0.0002,0.9568,0.0002
+temporal,0.4501,0.0017,0.2956,0.0513,0.593,0.0602,0.4998,0.0014

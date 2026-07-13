@@ -1,0 +1,5 @@
+contribution,dataset,hypothesis,indicator,value,ci_lower,ci_upper,p_value,n_seeds,conclusion
+C1,CIC2017,Random-split protocol inflates reported performance vs temporal holdout,macro_f1,0.6511,0.6502,0.6524,0.0312,5,Supported
+C1,CIC2018,Random-split protocol inflates reported performance vs temporal holdout,macro_f1,0.5199,0.5189,0.5209,0.0312,5,Supported
+C2,CIC2017,Latent-space distribution shift is detectable (temporal train → test),mean_PSI + n_KS_significant,0.655,,,,5,Drift detected
+C2,CIC2018,Latent-space distribution shift is detectable (temporal train → test),mean_PSI + n_KS_significant,0.2272,,,,5,Drift detected

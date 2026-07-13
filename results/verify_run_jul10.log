@@ -1,0 +1,450 @@
+14:15:30  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+14:15:30  INFO      __main__  Datasets : ['CIC2017', 'CIC2018']
+14:15:30  INFO      __main__  Seeds    : [42, 43, 44, 45, 46]
+14:15:30  INFO      __main__  Skip drift: False
+14:15:31  INFO      experiment.runner  ============================================================
+14:15:31  INFO      experiment.runner  START  dataset=CIC2017  seed=42
+/home/guscg0/tese-final/ids_thesis/data/loader.py:63: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=0, attack_type="BENIGN")
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+14:15:48  INFO      data.loader  CIC2017 loaded: 2064419 rows, 124 columns
+14:15:51  INFO      data.cleaner  clean_global [CIC2017]: 2064419 → 1451143 rows | 114 features | 20.6% attack
+14:15:51  INFO      experiment.runner  Dataset audit [CIC2017]: 1451143 rows | benign=1152785 attack=298358 (20.6%)
+14:15:53  INFO      data.splitter  Split [random]: train=1015799 (20.6% attack) | val=145115 (20.6% attack) | test=290229 (20.6% attack)
+14:15:53  INFO      data.splitter  Split [temporal-2017]: train=716735 (0.4% attack) | val=515959 (36.7% attack) | test=218449 (48.4% attack)
+14:15:54  INFO      preprocessing.pipeline  Pipeline fit subsampled: 1015799 → 500000 rows (stratified, seed=42)
+14:18:05  INFO      preprocessing.pipeline  Post-preprocessing range: train min=-1.491 max=10.000 mean_abs=0.899
+14:18:05  INFO      preprocessing.pipeline  Preprocessing: 114 raw → 114 kept → 30 selected | train=1015799 val=145115 test=290229 | fit_on=500000 (subsampled)
+14:18:06  INFO      preprocessing.pipeline  Pipeline fit subsampled: 716735 → 500000 rows (stratified, seed=42)
+14:20:10  INFO      preprocessing.pipeline  Post-preprocessing range: train min=-4.800 max=10.000 mean_abs=1.032
+14:20:11  INFO      preprocessing.pipeline  Preprocessing: 114 raw → 114 kept → 30 selected | train=716735 val=515959 test=218449 | fit_on=500000 (subsampled)
+14:20:12  INFO      models.classifier  Classifier trained: seed=42 | best_iteration=99 | train_n=1015799 val_n=145115
+14:20:12  INFO      models.classifier  Classifier trained: seed=42 | best_iteration=2 | train_n=716735 val_n=515959
+14:20:12  INFO      models.classifier  Test class distribution: {0: 230557, 1: 59672} | threshold=0.500
+14:20:13  INFO      models.classifier  Eval@0.500: macro_f1=0.9909 | pr_auc=0.9994 | roc_auc=0.9998 | bal_acc=0.9947 | TPR=0.9958 | PPR=0.2099
+14:20:13  INFO      models.classifier  Test class distribution: {0: 112659, 1: 105790} | threshold=0.500
+14:20:13  INFO      models.classifier  Eval@0.500: macro_f1=0.3376 | pr_auc=0.5012 | roc_auc=0.4889 | bal_acc=0.4923 | TPR=0.0010 | PPR=0.0090
+14:20:13  INFO      models.classifier  Threshold search (val, metric=balanced_accuracy): optimal=0.390 → val_score=0.9948
+14:20:16  INFO      models.classifier  Threshold search (val, metric=balanced_accuracy): optimal=0.010 → val_score=0.5000
+14:20:16  INFO      models.classifier  Test class distribution: {0: 230557, 1: 59672} | threshold=0.390
+14:20:16  INFO      models.classifier  Eval@0.390: macro_f1=0.9901 | pr_auc=0.9994 | roc_auc=0.9998 | bal_acc=0.9948 | TPR=0.9970 | PPR=0.2109
+14:20:16  INFO      models.classifier  Test class distribution: {0: 112659, 1: 105790} | threshold=0.010
+14:20:16  INFO      models.classifier  Eval@0.010: macro_f1=0.3263 | pr_auc=0.5012 | roc_auc=0.4889 | bal_acc=0.5000 | TPR=1.0000 | PPR=1.0000
+14:20:17  INFO      drift.autoencoder  Autoencoder training subsampled: 716735 → 500000 rows (seed=42)
+14:20:17  INFO      drift.autoencoder  Autoencoder device: cuda | n_train=500000
+14:21:34  INFO      drift.autoencoder  Autoencoder trained: input_dim=30 → latent_dim=16 | 50 epochs | final_loss=0.002246
+14:21:34  WARNING   drift.metrics  PSI dim 15: edge collapse reduced bins from 10 to 2 (likely ReLU saturation). PSI value is not directly comparable to dimensions with 10 bins.
+14:21:34  INFO      drift.metrics  Drift summary: mean_psi=0.5821 | max_psi=0.8863 | drifted_dims=15/16 | ks_sig=15 dims
+14:21:34  INFO      experiment.runner  END    dataset=CIC2017  seed=42  runtime=363.2s
+14:21:34  INFO      experiment.runner  ============================================================
+14:21:34  INFO      experiment.runner  START  dataset=CIC2017  seed=43
+/home/guscg0/tese-final/ids_thesis/data/loader.py:63: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=0, attack_type="BENIGN")
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+14:21:50  INFO      data.loader  CIC2017 loaded: 2064419 rows, 124 columns
+14:21:54  INFO      data.cleaner  clean_global [CIC2017]: 2064419 → 1451143 rows | 114 features | 20.6% attack
+14:21:54  INFO      experiment.runner  Dataset audit [CIC2017]: 1451143 rows | benign=1152785 attack=298358 (20.6%)
+14:21:55  INFO      data.splitter  Split [random]: train=1015799 (20.6% attack) | val=145115 (20.6% attack) | test=290229 (20.6% attack)
+14:21:56  INFO      data.splitter  Split [temporal-2017]: train=716735 (0.4% attack) | val=515959 (36.7% attack) | test=218449 (48.4% attack)
+14:21:56  INFO      preprocessing.pipeline  Pipeline fit subsampled: 1015799 → 500000 rows (stratified, seed=43)
+14:24:07  INFO      preprocessing.pipeline  Post-preprocessing range: train min=-1.482 max=10.000 mean_abs=0.899
+14:24:07  INFO      preprocessing.pipeline  Preprocessing: 114 raw → 114 kept → 30 selected | train=1015799 val=145115 test=290229 | fit_on=500000 (subsampled)
+14:24:08  INFO      preprocessing.pipeline  Pipeline fit subsampled: 716735 → 500000 rows (stratified, seed=43)
+14:26:13  INFO      preprocessing.pipeline  Post-preprocessing range: train min=-4.750 max=10.000 mean_abs=1.030
+14:26:13  INFO      preprocessing.pipeline  Preprocessing: 114 raw → 114 kept → 30 selected | train=716735 val=515959 test=218449 | fit_on=500000 (subsampled)
+14:26:14  INFO      models.classifier  Classifier trained: seed=43 | best_iteration=99 | train_n=1015799 val_n=145115
+14:26:15  INFO      models.classifier  Classifier trained: seed=43 | best_iteration=2 | train_n=716735 val_n=515959
+14:26:15  INFO      models.classifier  Test class distribution: {0: 230557, 1: 59672} | threshold=0.500
+14:26:15  INFO      models.classifier  Eval@0.500: macro_f1=0.9905 | pr_auc=0.9993 | roc_auc=0.9998 | bal_acc=0.9945 | TPR=0.9957 | PPR=0.2101
+14:26:15  INFO      models.classifier  Test class distribution: {0: 112659, 1: 105790} | threshold=0.500
+14:26:15  INFO      models.classifier  Eval@0.500: macro_f1=0.3403 | pr_auc=0.4965 | roc_auc=0.4722 | bal_acc=0.5000 | TPR=0.0000 | PPR=0.0000
+14:26:16  INFO      models.classifier  Threshold search (val, metric=balanced_accuracy): optimal=0.400 → val_score=0.9946
+14:26:18  INFO      models.classifier  Threshold search (val, metric=balanced_accuracy): optimal=0.380 → val_score=0.5101
+14:26:18  INFO      models.classifier  Test class distribution: {0: 230557, 1: 59672} | threshold=0.400
+14:26:19  INFO      models.classifier  Eval@0.400: macro_f1=0.9895 | pr_auc=0.9993 | roc_auc=0.9998 | bal_acc=0.9943 | TPR=0.9964 | PPR=0.2111
+14:26:19  INFO      models.classifier  Test class distribution: {0: 112659, 1: 105790} | threshold=0.380
+14:26:19  INFO      models.classifier  Eval@0.380: macro_f1=0.3771 | pr_auc=0.4965 | roc_auc=0.4722 | bal_acc=0.4892 | TPR=0.0552 | PPR=0.0664
+14:26:19  INFO      drift.autoencoder  Autoencoder training subsampled: 716735 → 500000 rows (seed=43)
+14:26:19  INFO      drift.autoencoder  Autoencoder device: cuda | n_train=500000
+14:27:37  INFO      drift.autoencoder  Autoencoder trained: input_dim=30 → latent_dim=16 | 50 epochs | final_loss=0.002445
+14:27:37  WARNING   drift.metrics  PSI dim 2: edge collapse reduced bins from 10 to 2 (likely ReLU saturation). PSI value is not directly comparable to dimensions with 10 bins.
+14:27:37  INFO      drift.metrics  Drift summary: mean_psi=0.6679 | max_psi=0.8567 | drifted_dims=15/16 | ks_sig=15 dims
+14:27:37  INFO      experiment.runner  END    dataset=CIC2017  seed=43  runtime=363.3s
+14:27:37  INFO      experiment.runner  ============================================================
+14:27:37  INFO      experiment.runner  START  dataset=CIC2017  seed=44
+/home/guscg0/tese-final/ids_thesis/data/loader.py:63: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=0, attack_type="BENIGN")
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+14:27:54  INFO      data.loader  CIC2017 loaded: 2064419 rows, 124 columns
+14:27:57  INFO      data.cleaner  clean_global [CIC2017]: 2064419 → 1451143 rows | 114 features | 20.6% attack
+14:27:57  INFO      experiment.runner  Dataset audit [CIC2017]: 1451143 rows | benign=1152785 attack=298358 (20.6%)
+14:27:59  INFO      data.splitter  Split [random]: train=1015799 (20.6% attack) | val=145115 (20.6% attack) | test=290229 (20.6% attack)
+14:27:59  INFO      data.splitter  Split [temporal-2017]: train=716735 (0.4% attack) | val=515959 (36.7% attack) | test=218449 (48.4% attack)
+14:28:00  INFO      preprocessing.pipeline  Pipeline fit subsampled: 1015799 → 500000 rows (stratified, seed=44)
+14:30:12  INFO      preprocessing.pipeline  Post-preprocessing range: train min=-1.489 max=10.000 mean_abs=0.899
+14:30:12  INFO      preprocessing.pipeline  Preprocessing: 114 raw → 114 kept → 30 selected | train=1015799 val=145115 test=290229 | fit_on=500000 (subsampled)
+14:30:13  INFO      preprocessing.pipeline  Pipeline fit subsampled: 716735 → 500000 rows (stratified, seed=44)
+14:32:20  INFO      preprocessing.pipeline  Post-preprocessing range: train min=-5.000 max=10.000 mean_abs=1.027
+14:32:20  INFO      preprocessing.pipeline  Preprocessing: 114 raw → 114 kept → 30 selected | train=716735 val=515959 test=218449 | fit_on=500000 (subsampled)
+14:32:22  INFO      models.classifier  Classifier trained: seed=44 | best_iteration=99 | train_n=1015799 val_n=145115
+14:32:22  INFO      models.classifier  Classifier trained: seed=44 | best_iteration=2 | train_n=716735 val_n=515959
+14:32:22  INFO      models.classifier  Test class distribution: {0: 230557, 1: 59672} | threshold=0.500
+14:32:22  INFO      models.classifier  Eval@0.500: macro_f1=0.9905 | pr_auc=0.9994 | roc_auc=0.9998 | bal_acc=0.9944 | TPR=0.9954 | PPR=0.2099
+14:32:22  INFO      models.classifier  Test class distribution: {0: 112659, 1: 105790} | threshold=0.500
+14:32:22  INFO      models.classifier  Eval@0.500: macro_f1=0.3376 | pr_auc=0.5037 | roc_auc=0.4937 | bal_acc=0.4922 | TPR=0.0010 | PPR=0.0090
+14:32:23  INFO      models.classifier  Threshold search (val, metric=balanced_accuracy): optimal=0.510 → val_score=0.9948
+14:32:26  INFO      models.classifier  Threshold search (val, metric=balanced_accuracy): optimal=0.450 → val_score=0.5021
+14:32:26  INFO      models.classifier  Test class distribution: {0: 230557, 1: 59672} | threshold=0.510
+14:32:26  INFO      models.classifier  Eval@0.510: macro_f1=0.9906 | pr_auc=0.9994 | roc_auc=0.9998 | bal_acc=0.9943 | TPR=0.9953 | PPR=0.2099
+14:32:26  INFO      models.classifier  Test class distribution: {0: 112659, 1: 105790} | threshold=0.450
+14:32:26  INFO      models.classifier  Eval@0.450: macro_f1=0.3660 | pr_auc=0.5037 | roc_auc=0.4937 | bal_acc=0.5016 | TPR=0.0302 | PPR=0.0285
+14:32:27  INFO      drift.autoencoder  Autoencoder training subsampled: 716735 → 500000 rows (seed=44)
+14:32:27  INFO      drift.autoencoder  Autoencoder device: cuda | n_train=500000
+14:33:46  INFO      drift.autoencoder  Autoencoder trained: input_dim=30 → latent_dim=16 | 50 epochs | final_loss=0.005283
+14:33:46  WARNING   drift.metrics  PSI dim 7: edge collapse reduced bins from 10 to 2 (likely ReLU saturation). PSI value is not directly comparable to dimensions with 10 bins.
+14:33:46  WARNING   drift.metrics  PSI dim 8: edge collapse reduced bins from 10 to 2 (likely ReLU saturation). PSI value is not directly comparable to dimensions with 10 bins.
+14:33:46  WARNING   drift.metrics  PSI dim 10: edge collapse reduced bins from 10 to 2 (likely ReLU saturation). PSI value is not directly comparable to dimensions with 10 bins.
+14:33:46  INFO      drift.metrics  Drift summary: mean_psi=0.5338 | max_psi=0.8533 | drifted_dims=13/16 | ks_sig=13 dims
+14:33:46  INFO      experiment.runner  END    dataset=CIC2017  seed=44  runtime=368.7s
+14:33:46  INFO      experiment.runner  ============================================================
+14:33:46  INFO      experiment.runner  START  dataset=CIC2017  seed=45
+/home/guscg0/tese-final/ids_thesis/data/loader.py:63: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=0, attack_type="BENIGN")
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+14:34:03  INFO      data.loader  CIC2017 loaded: 2064419 rows, 124 columns
+14:34:06  INFO      data.cleaner  clean_global [CIC2017]: 2064419 → 1451143 rows | 114 features | 20.6% attack
+14:34:07  INFO      experiment.runner  Dataset audit [CIC2017]: 1451143 rows | benign=1152785 attack=298358 (20.6%)
+14:34:08  INFO      data.splitter  Split [random]: train=1015799 (20.6% attack) | val=145115 (20.6% attack) | test=290229 (20.6% attack)
+14:34:09  INFO      data.splitter  Split [temporal-2017]: train=716735 (0.4% attack) | val=515959 (36.7% attack) | test=218449 (48.4% attack)
+14:34:09  INFO      preprocessing.pipeline  Pipeline fit subsampled: 1015799 → 500000 rows (stratified, seed=45)
+14:36:22  INFO      preprocessing.pipeline  Post-preprocessing range: train min=-1.482 max=10.000 mean_abs=0.900
+14:36:22  INFO      preprocessing.pipeline  Preprocessing: 114 raw → 114 kept → 30 selected | train=1015799 val=145115 test=290229 | fit_on=500000 (subsampled)
+14:36:23  INFO      preprocessing.pipeline  Pipeline fit subsampled: 716735 → 500000 rows (stratified, seed=45)
+14:38:30  INFO      preprocessing.pipeline  Post-preprocessing range: train min=-4.750 max=10.000 mean_abs=1.026
+14:38:30  INFO      preprocessing.pipeline  Preprocessing: 114 raw → 114 kept → 30 selected | train=716735 val=515959 test=218449 | fit_on=500000 (subsampled)
+14:38:31  INFO      models.classifier  Classifier trained: seed=45 | best_iteration=99 | train_n=1015799 val_n=145115
+14:38:32  INFO      models.classifier  Classifier trained: seed=45 | best_iteration=2 | train_n=716735 val_n=515959
+14:38:32  INFO      models.classifier  Test class distribution: {0: 230557, 1: 59672} | threshold=0.500
+14:38:32  INFO      models.classifier  Eval@0.500: macro_f1=0.9909 | pr_auc=0.9994 | roc_auc=0.9998 | bal_acc=0.9948 | TPR=0.9960 | PPR=0.2099
+14:38:32  INFO      models.classifier  Test class distribution: {0: 112659, 1: 105790} | threshold=0.500
+14:38:32  INFO      models.classifier  Eval@0.500: macro_f1=0.3402 | pr_auc=0.4972 | roc_auc=0.4932 | bal_acc=0.5000 | TPR=0.0000 | PPR=0.0000
+14:38:33  INFO      models.classifier  Threshold search (val, metric=balanced_accuracy): optimal=0.450 → val_score=0.9944
+14:38:36  INFO      models.classifier  Threshold search (val, metric=balanced_accuracy): optimal=0.380 → val_score=0.5175
+14:38:36  INFO      models.classifier  Test class distribution: {0: 230557, 1: 59672} | threshold=0.450
+14:38:36  INFO      models.classifier  Eval@0.450: macro_f1=0.9908 | pr_auc=0.9994 | roc_auc=0.9998 | bal_acc=0.9949 | TPR=0.9965 | PPR=0.2102
+14:38:36  INFO      models.classifier  Test class distribution: {0: 112659, 1: 105790} | threshold=0.380
+14:38:36  INFO      models.classifier  Eval@0.380: macro_f1=0.3612 | pr_auc=0.4972 | roc_auc=0.4932 | bal_acc=0.4835 | TPR=0.0367 | PPR=0.0538
+14:38:36  INFO      drift.autoencoder  Autoencoder training subsampled: 716735 → 500000 rows (seed=45)
+14:38:36  INFO      drift.autoencoder  Autoencoder device: cuda | n_train=500000
+14:39:55  INFO      drift.autoencoder  Autoencoder trained: input_dim=30 → latent_dim=16 | 50 epochs | final_loss=0.003409
+14:39:55  WARNING   drift.metrics  PSI dim 2: edge collapse reduced bins from 10 to 2 (likely ReLU saturation). PSI value is not directly comparable to dimensions with 10 bins.
+14:39:56  INFO      drift.metrics  Drift summary: mean_psi=0.6336 | max_psi=0.8804 | drifted_dims=15/16 | ks_sig=15 dims
+14:39:56  INFO      experiment.runner  END    dataset=CIC2017  seed=45  runtime=369.5s
+14:39:56  INFO      experiment.runner  ============================================================
+14:39:56  INFO      experiment.runner  START  dataset=CIC2017  seed=46
+/home/guscg0/tese-final/ids_thesis/data/loader.py:63: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=0, attack_type="BENIGN")
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+/home/guscg0/tese-final/ids_thesis/data/loader.py:87: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  df = df.assign(day=day, label=binary_label, attack_type=raw_labels)
+14:40:13  INFO      data.loader  CIC2017 loaded: 2064419 rows, 124 columns
+14:40:16  INFO      data.cleaner  clean_global [CIC2017]: 2064419 → 1451143 rows | 114 features | 20.6% attack
+14:40:17  INFO      experiment.runner  Dataset audit [CIC2017]: 1451143 rows | benign=1152785 attack=298358 (20.6%)
+14:40:18  INFO      data.splitter  Split [random]: train=1015799 (20.6% attack) | val=145115 (20.6% attack) | test=290229 (20.6% attack)
+14:40:19  INFO      data.splitter  Split [temporal-2017]: train=716735 (0.4% attack) | val=515959 (36.7% attack) | test=218449 (48.4% attack)
+14:40:19  INFO      preprocessing.pipeline  Pipeline fit subsampled: 1015799 → 500000 rows (stratified, seed=46)
+14:42:31  INFO      preprocessing.pipeline  Post-preprocessing range: train min=-1.482 max=10.000 mean_abs=0.901
+14:42:32  INFO      preprocessing.pipeline  Preprocessing: 114 raw → 114 kept → 30 selected | train=1015799 val=145115 test=290229 | fit_on=500000 (subsampled)
+14:42:32  INFO      preprocessing.pipeline  Pipeline fit subsampled: 716735 → 500000 rows (stratified, seed=46)
+14:44:38  INFO      preprocessing.pipeline  Post-preprocessing range: train min=-4.800 max=10.000 mean_abs=1.033
+14:44:39  INFO      preprocessing.pipeline  Preprocessing: 114 raw → 114 kept → 30 selected | train=716735 val=515959 test=218449 | fit_on=500000 (subsampled)
+14:44:40  INFO      models.classifier  Classifier trained: seed=46 | best_iteration=99 | train_n=1015799 val_n=145115
+14:44:40  INFO      models.classifier  Classifier trained: seed=46 | best_iteration=2 | train_n=716735 val_n=515959
+14:44:40  INFO      models.classifier  Test class distribution: {0: 230557, 1: 59672} | threshold=0.500
+14:44:41  INFO      models.classifier  Eval@0.500: macro_f1=0.9910 | pr_auc=0.9993 | roc_auc=0.9998 | bal_acc=0.9945 | TPR=0.9951 | PPR=0.2095
+14:44:41  INFO      models.classifier  Test class distribution: {0: 112659, 1: 105790} | threshold=0.500
+14:44:41  INFO      models.classifier  Eval@0.500: macro_f1=0.3403 | pr_auc=0.4914 | roc_auc=0.4539 | bal_acc=0.5000 | TPR=0.0000 | PPR=0.0000
+14:44:41  INFO      models.classifier  Threshold search (val, metric=balanced_accuracy): optimal=0.430 → val_score=0.9946
+14:44:44  INFO      models.classifier  Threshold search (val, metric=balanced_accuracy): optimal=0.390 → val_score=0.5103
+14:44:44  INFO      models.classifier  Test class distribution: {0: 230557, 1: 59672} | threshold=0.430
+14:44:44  INFO      models.classifier  Eval@0.430: macro_f1=0.9906 | pr_auc=0.9993 | roc_auc=0.9998 | bal_acc=0.9947 | TPR=0.9961 | PPR=0.2102
+14:44:44  INFO      models.classifier  Test class distribution: {0: 112659, 1: 105790} | threshold=0.390
+14:44:44  INFO      models.classifier  Eval@0.390: macro_f1=0.3601 | pr_auc=0.4914 | roc_auc=0.4539 | bal_acc=0.4822 | TPR=0.0361 | PPR=0.0544
+14:44:45  INFO      drift.autoencoder  Autoencoder training subsampled: 716735 → 500000 rows (seed=46)
+14:44:45  INFO      drift.autoencoder  Autoencoder device: cuda | n_train=500000
+14:46:04  INFO      drift.autoencoder  Autoencoder trained: input_dim=30 → latent_dim=16 | 50 epochs | final_loss=0.001771
+14:46:04  INFO      drift.metrics  Drift summary: mean_psi=0.6275 | max_psi=0.8502 | drifted_dims=16/16 | ks_sig=16 dims
+14:46:04  INFO      experiment.runner  END    dataset=CIC2017  seed=46  runtime=368.5s
+14:46:04  INFO      experiment.runner  ============================================================
+14:46:04  INFO      experiment.runner  START  dataset=CIC2018  seed=42
+14:47:57  WARNING   data.loader  Schema intersection dropped 4 feature(s) not present in all files: ['dst_ip', 'flow_id', 'src_ip', 'src_port']
+14:49:08  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+14:49:08  INFO      __main__  Datasets : ['CIC2017', 'CIC2018']
+14:49:08  INFO      __main__  Seeds    : [42, 43, 44, 45, 46]
+14:49:08  INFO      __main__  Skip drift: False
+14:49:08  INFO      experiment.runner  Skipping CIC2017 seed=42 (cached at /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10/results_CIC2017_42.json)
+14:49:08  INFO      experiment.runner  Skipping CIC2017 seed=43 (cached at /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10/results_CIC2017_43.json)
+14:49:08  INFO      experiment.runner  Skipping CIC2017 seed=44 (cached at /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10/results_CIC2017_44.json)
+14:49:08  INFO      experiment.runner  Skipping CIC2017 seed=45 (cached at /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10/results_CIC2017_45.json)
+14:49:08  INFO      experiment.runner  Skipping CIC2017 seed=46 (cached at /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10/results_CIC2017_46.json)
+14:49:10  INFO      experiment.runner  ============================================================
+14:49:10  INFO      experiment.runner  START  dataset=CIC2018  seed=42
+14:51:00  WARNING   data.loader  Schema intersection dropped 4 feature(s) not present in all files: ['dst_ip', 'flow_id', 'src_ip', 'src_port']
+14:52:24  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+14:52:24  INFO      __main__  Datasets : ['CIC2018']
+14:52:24  INFO      __main__  Seeds    : [42]
+14:52:24  INFO      __main__  Skip drift: False
+14:52:26  INFO      experiment.runner  ============================================================
+14:52:26  INFO      experiment.runner  START  dataset=CIC2018  seed=42
+14:54:14  WARNING   data.loader  Schema intersection dropped 4 feature(s) not present in all files: ['dst_ip', 'flow_id', 'src_ip', 'src_port']
+bash: line 1: 2563327 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED 42
+14:54:32  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+14:54:32  INFO      __main__  Datasets : ['CIC2018']
+14:54:32  INFO      __main__  Seeds    : [43]
+14:54:32  INFO      __main__  Skip drift: False
+14:54:34  INFO      experiment.runner  ============================================================
+14:54:34  INFO      experiment.runner  START  dataset=CIC2018  seed=43
+14:56:24  WARNING   data.loader  Schema intersection dropped 4 feature(s) not present in all files: ['dst_ip', 'flow_id', 'src_ip', 'src_port']
+bash: line 1: 2568191 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED 43
+14:56:44  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+14:56:44  INFO      __main__  Datasets : ['CIC2018']
+14:56:44  INFO      __main__  Seeds    : [44]
+14:56:44  INFO      __main__  Skip drift: False
+14:56:46  INFO      experiment.runner  ============================================================
+14:56:46  INFO      experiment.runner  START  dataset=CIC2018  seed=44
+14:58:36  WARNING   data.loader  Schema intersection dropped 4 feature(s) not present in all files: ['dst_ip', 'flow_id', 'src_ip', 'src_port']
+14:59:09  INFO      data.loader  CIC2018 loaded: 16233002 rows, 82 columns
+bash: line 1: 2573981 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED 44
+14:59:30  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+14:59:30  INFO      __main__  Datasets : ['CIC2018']
+14:59:30  INFO      __main__  Seeds    : [45]
+14:59:30  INFO      __main__  Skip drift: False
+14:59:32  INFO      experiment.runner  ============================================================
+14:59:32  INFO      experiment.runner  START  dataset=CIC2018  seed=45
+15:01:21  WARNING   data.loader  Schema intersection dropped 4 feature(s) not present in all files: ['dst_ip', 'flow_id', 'src_ip', 'src_port']
+15:01:54  INFO      data.loader  CIC2018 loaded: 16233002 rows, 82 columns
+bash: line 1: 2580163 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED 45
+15:02:15  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:02:15  INFO      __main__  Datasets : ['CIC2018']
+15:02:15  INFO      __main__  Seeds    : [46]
+15:02:15  INFO      __main__  Skip drift: False
+15:02:17  INFO      experiment.runner  ============================================================
+15:02:17  INFO      experiment.runner  START  dataset=CIC2018  seed=46
+15:04:06  WARNING   data.loader  Schema intersection dropped 4 feature(s) not present in all files: ['dst_ip', 'flow_id', 'src_ip', 'src_port']
+15:04:39  INFO      data.loader  CIC2018 loaded: 16233002 rows, 82 columns
+bash: line 1: 2586546 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED 46
+LOOP_DONE
+=== RETRY with lean loader ===
+15:06:27  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:06:27  INFO      __main__  Datasets : ['CIC2018']
+15:06:27  INFO      __main__  Seeds    : [42]
+15:06:27  INFO      __main__  Skip drift: False
+15:06:29  INFO      experiment.runner  ============================================================
+15:06:29  INFO      experiment.runner  START  dataset=CIC2018  seed=42
+15:08:51  WARNING   data.loader  Schema intersection dropped 4 feature(s) not present in all files: ['dst_ip', 'flow_id', 'src_ip', 'src_port']
+15:08:56  INFO      data.loader  CIC2018 loaded: 16233002 rows, 82 columns
+bash: line 1: 2597054 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED_RETRY 42
+15:09:36  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:09:36  INFO      __main__  Datasets : ['CIC2018']
+15:09:36  INFO      __main__  Seeds    : [43]
+15:09:36  INFO      __main__  Skip drift: False
+15:09:38  INFO      experiment.runner  ============================================================
+15:09:38  INFO      experiment.runner  START  dataset=CIC2018  seed=43
+=== RETRY2 lean loader+cleaner ===
+15:19:21  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:19:21  INFO      __main__  Datasets : ['CIC2018']
+15:19:21  INFO      __main__  Seeds    : [42]
+15:19:21  INFO      __main__  Skip drift: False
+15:19:22  INFO      experiment.runner  ============================================================
+15:19:22  INFO      experiment.runner  START  dataset=CIC2018  seed=42
+15:21:44  WARNING   data.loader  Schema intersection dropped 4 feature(s) not present in all files: ['dst_ip', 'flow_id', 'src_ip', 'src_port']
+15:21:48  INFO      data.loader  CIC2018 loaded: 16233002 rows, 82 columns
+bash: line 1: 2628632 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED2 42
+15:22:11  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:22:11  INFO      __main__  Datasets : ['CIC2018']
+15:22:11  INFO      __main__  Seeds    : [43]
+15:22:11  INFO      __main__  Skip drift: False
+15:22:13  INFO      experiment.runner  ============================================================
+15:22:13  INFO      experiment.runner  START  dataset=CIC2018  seed=43
+15:24:32  WARNING   data.loader  Schema intersection dropped 4 feature(s) not present in all files: ['dst_ip', 'flow_id', 'src_ip', 'src_port']
+15:24:37  INFO      data.loader  CIC2018 loaded: 16233002 rows, 82 columns
+bash: line 1: 2635803 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED2 43
+15:24:55  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:24:55  INFO      __main__  Datasets : ['CIC2018']
+15:24:55  INFO      __main__  Seeds    : [44]
+15:24:55  INFO      __main__  Skip drift: False
+15:24:57  INFO      experiment.runner  ============================================================
+15:24:57  INFO      experiment.runner  START  dataset=CIC2018  seed=44
+bash: line 1: 2642345 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED2 44
+15:27:29  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:27:29  INFO      __main__  Datasets : ['CIC2018']
+15:27:29  INFO      __main__  Seeds    : [45]
+15:27:29  INFO      __main__  Skip drift: False
+15:27:31  INFO      experiment.runner  ============================================================
+15:27:31  INFO      experiment.runner  START  dataset=CIC2018  seed=45
+bash: line 1: 2645970 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED2 45
+15:31:22  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:31:22  INFO      __main__  Datasets : ['CIC2018']
+15:31:22  INFO      __main__  Seeds    : [46]
+15:31:22  INFO      __main__  Skip drift: False
+15:31:24  INFO      experiment.runner  ============================================================
+15:31:24  INFO      experiment.runner  START  dataset=CIC2018  seed=46
+bash: line 1: 2649228 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED2 46
+RETRY2_DONE
+=== RETRY3 inf-at-load ===
+15:35:45  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:35:45  INFO      __main__  Datasets : ['CIC2018']
+15:35:45  INFO      __main__  Seeds    : [42]
+15:35:45  INFO      __main__  Skip drift: False
+15:35:47  INFO      experiment.runner  ============================================================
+15:35:47  INFO      experiment.runner  START  dataset=CIC2018  seed=42
+15:38:09  WARNING   data.loader  Schema intersection dropped 4 feature(s) not present in all files: ['dst_ip', 'flow_id', 'src_ip', 'src_port']
+15:38:13  INFO      data.loader  CIC2018 loaded: 16233002 rows, 82 columns
+bash: line 1: 2658128 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED3 42
+15:38:29  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:38:29  INFO      __main__  Datasets : ['CIC2018']
+15:38:29  INFO      __main__  Seeds    : [43]
+15:38:29  INFO      __main__  Skip drift: False
+15:38:31  INFO      experiment.runner  ============================================================
+15:38:31  INFO      experiment.runner  START  dataset=CIC2018  seed=43
+=== RETRY4 usecols ===
+15:47:52  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:47:52  INFO      __main__  Datasets : ['CIC2018']
+15:47:52  INFO      __main__  Seeds    : [42]
+15:47:52  INFO      __main__  Skip drift: False
+15:47:53  INFO      experiment.runner  ============================================================
+15:47:53  INFO      experiment.runner  START  dataset=CIC2018  seed=42
+15:49:56  INFO      data.loader  CIC2018 loaded: 16233002 rows, 79 columns
+bash: line 1: 2688982 Killed                  /home/guscg0/tese-final/.venv/bin/python main.py --datasets CIC2018 --seeds $s --output-dir /home/guscg0/tese-final/ids_thesis/results/verify_run_jul10 --log-level INFO
+SEED_FAILED4 42
+15:50:14  INFO      __main__  IDS Thesis — Evaluation Protocol Bias Study
+15:50:14  INFO      __main__  Datasets : ['CIC2018']
+15:50:14  INFO      __main__  Seeds    : [43]
+15:50:14  INFO      __main__  Skip drift: False
+15:50:16  INFO      experiment.runner  ============================================================
+15:50:16  INFO      experiment.runner  START  dataset=CIC2018  seed=43
